@@ -52,8 +52,6 @@ if [ -f "${mynode}" ]; then
              continue
            fi
            HOST_NAME=`echo ${line}|awk '{print $1}'`
-           IP_ADD=`echo ${line}|awk '{print $2}'`
-           MAC_ADD=`echo ${line}|awk '{print $3}'`
            echo "Delete host ${HOST_NAME}"
            hammer host delete --name $HOST_NAME  
          done < ${mynode}

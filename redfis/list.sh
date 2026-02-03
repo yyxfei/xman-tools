@@ -1,6 +1,7 @@
 LLLL=`cat $1`
 #echo $LLLL
 ## $1 is BMC ip list file
+## pip3 install redfishtool
 for hhost in $LLLL
 do
   echo " -------------------------------------------------"
